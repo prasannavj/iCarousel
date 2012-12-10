@@ -237,6 +237,11 @@ iCarouselOption;
 - (void)removeItemAtIndex:(NSInteger)index animated:(BOOL)animated;
 - (void)insertItemAtIndex:(NSInteger)index animated:(BOOL)animated;
 - (void)reloadItemAtIndex:(NSInteger)index animated:(BOOL)animated;
+//Added by Prasanna -  To remove the Error on CGFloat Issue on Original Code -  START - Dec-10-2012
+- (NSInteger)circularCarouselItemCount;
+- (CGFloat)clampedOffset:(CGFloat)offset;
+- (CGFloat)valueForOption:(iCarouselOption)option withDefault:(CGFloat)value;
+//Added by Prasanna -  To remove the Error on CGFloat Issue on Original Code -  END - Dec-10-2012
 
 - (void)reloadData;
 
